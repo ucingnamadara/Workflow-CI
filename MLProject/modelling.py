@@ -84,8 +84,6 @@ def init_tfidf_vectorizer(X_train, X_test):
 
 def initialize_mlflow():
     print("Initializing MLflow...")
-    mlflow.set_tracking_uri("http://127.0.0.1:5000")
-    mlflow.set_experiment("PLOT_GENRE_PREDICTOR_GRIDSEARCH_AUTOLOG")
 
 if __name__ == "__main__":
     mlflow.sklearn.autolog()
